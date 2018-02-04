@@ -1,0 +1,95 @@
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+}
+    
+
+/* tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+.about-text {
+  padding-left: 0;
+}
+.boxed-btn.about-btn {
+  margin-bottom: 30px;
+}
+#map {
+  margin-bottom: 30px;
+}
+.contact-form input[type="tel"] {
+  margin-bottom: 20px;
+}
+
+}
+
+    
+    
+/* Small Mobile :320px. */
+
+@media (max-width: 767px) {
+.section-padding {
+	padding: 50px 0;
+}
+.typer-js h1 {
+  font-size: 32px;
+}
+.about-text {
+  padding-left: 0;
+}
+.boxed-btn.about-btn {
+  margin-bottom: 30px;
+}
+.why-area h3 {
+  margin: 40px 0;
+}
+.single-counter-box {
+	text-align: center;
+}
+.single-counter-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.col-sm-12:last-child .single-counter-box {
+  margin-bottom: 0;
+}
+.project-title li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 2px 12px;
+}
+#map {
+  margin-bottom: 30px;
+}
+.contact-form input[type="tel"] {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+}
+    
+    
+    
+/* Large Mobile :480px. */
+@media (min-width: 480px) and (max-width: 767px) {
+.col-sm-6:nth-child(3) .single-counter-box, .col-sm-6:nth-child(3) .single-counter-box {
+	margin: 0;
+}
+.single-bar-item h2 span {
+  font-size: 63%;
+}
+.typer-js h1 {
+  font-size: 50px;
+}
+
+
+
+
+
+
+}

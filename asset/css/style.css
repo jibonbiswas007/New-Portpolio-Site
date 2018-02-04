@@ -1,0 +1,642 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name 
+    Template URI: http://bootexperts.com
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+
+-----------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Metal+Mania|Mukta:300,400|Rum+Raisin');
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-family: 'Metal Mania', cursive;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {
+    font-family: 'Rum+Raisin', sans-serif;
+    font-size: 15px;
+    background: rgba(10, 240, 241, .1);
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ========== Section Padding =========*/
+.section-padding {
+    padding: 100px 0;
+}
+.section-padding-80 {
+  padding: 80px 0;
+}
+/* ========== hero-area-bg =========*/
+.hero-area-bg {background: url(../img/earth.gif), url(../img/hero-bg.jpg);}
+/* ========== why bg =========*/
+.why-bg {background: url(../img/trafic.jpg);}
+
+/* ========== Single Project bg =========*/
+.bg-1 {background: url(../img/factory.jpg);}
+.bg-2 {background: url(../img/landingpage.jpg);}
+.bg-3 {background: url(../img/coder.jpg);}
+.bg-4 {background: url(../img/wp.jpg);}
+.bg-5 {background: url(../img/creativemass.jpg);}
+.bg-6 {background: url(../img/fashion.jpg);}
+
+/* =========== Trigger Menu ==========*/
+.trigger-menu {
+  background: #0abef1 none repeat scroll 0 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 42px;
+  padding: 4px 8px;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  z-index: 99;
+}
+.trigger-menu span {
+  background: #000 none repeat scroll 0 0;
+  display: block;
+  height: 4px;
+  margin: 6px 0;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.trigger-menu.active {
+  padding-top: 8px;
+}
+.trigger-menu.active span {
+  height: calc(50% - 8px);
+  position: absolute;
+  width: calc(100% - 16px);
+}
+.trigger-menu.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.trigger-menu.active span:nth-child(2) {
+  display: none;
+}
+.trigger-menu.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+/* =========== Sidebar Menu ==========*/
+.sidebar-menu {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  left: -300px;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;text-decoration:none;
+     -moz-transition: all 0.3s ease 0s;text-decoration:none;
+      -ms-transition: all 0.3s ease 0s;text-decoration:none;
+       -o-transition: all 0.3s ease 0s;text-decoration:none;
+          transition: all 0.3s ease 0s;text-decoration:none;
+  width: 300px;
+  z-index: 99;
+}
+.sidebar-menu.active {
+    left: 0;
+}
+.sidebar-menu a {
+  color: #fff;
+}
+.sidebar-menu img {
+  margin-bottom: 50px;
+  width: 80px;
+}
+.main-menu li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+  text-transform: uppercase;
+}
+.main-menu li a:hover, .social-links li a:hover {
+    background: #0ABEF1;
+}
+/* ========== Social Links =========*/
+.social-links {
+  margin-top: 100px;
+}
+.social-links li {
+  display: inline-block;
+}
+.social-links li a {
+  border-radius: 50%;
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+}
+/* ========== Menu Close Css =========*/
+.sidebar-menu .menu-close {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+/* ========== Hero Area bg =========*/
+.hero-area {
+    position: relative;
+}
+.hero-area-bg {
+  animation: 50s linear 0s normal none infinite running animate-background;
+  background-attachment: fixed;
+  background-color: #000;
+  background-position: 120% 70px, 0px 0px, 0px 0px;
+  background-repeat: no-repeat, repeat-x, repeat-x;
+  height: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* ========== Hero Area Animation =========*/
+@-webkit-keyframes animate-background {
+    from { background-position: 120% 70px, 0px 0px, 0px 0px; }
+    to { background-position: -30% 70px, -1000px 0px, -500px 0px; }
+}
+@-o-keyframes animate-background {
+    from { background-position: 120% 70px, 0px 0px, 0px 0px; }
+    to { background-position: -30% 70px, -1000px 0px, -500px 0px; }
+}
+@-moz-keyframes animate-background {
+    from { background-position: 120% 70px, 0px 0px, 0px 0px; }
+    to { background-position: -30% 70px, -1000px 0px, -500px 0px; }
+}
+@keyframes animate-background {
+    from { background-position: 120% 70px, 0px 0px, 0px 0px; }
+    to { background-position: -30% 70px, -1000px 0px, -500px 0px; }
+}
+.hero-area-bg .d-table-cell {
+  vertical-align: middle;
+  position: relative;
+}
+.hero-area-bg, .hero-area-bg a {
+    color: #FFF;
+}
+.hero-area img {
+  background: #ddd none repeat scroll 0 0;
+  border-radius: 50%;
+  bottom: -35px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80px;
+}
+/* ========== Typer Js Css =========*/
+.typer-js {
+  height: 60px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+.typer-js h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+.typer-js h1 span {
+    color: #31D181;
+}
+
+/* ========== btn Css =========*/
+.boxed-btn {
+  background: #0abef1 none repeat scroll 0 0;
+  border: 1px solid #0abef1;
+  color: #FFF;
+  display: inline-block;
+  font-weight: 600;
+  margin: 0 5px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.boxed-btn.bordered-btn {
+  background: transparent none repeat scroll 0 0;
+}
+.boxed-btn:hover, .boxed-btn.bordered-btn {
+    background: transparent none repeat scroll 0 0;
+    color: #0ABEF1;
+}
+.boxed-btn.bordered-btn:hover {
+    background: #0abef1 none repeat scroll 0 0;
+    color: #fff;
+}
+
+/* ========== Section Title Css =========*/
+.section-title {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.section-title h2 {
+  border-right: 3px solid #0abef1;
+  font-size: 35px;
+  position: relative;
+  z-index: 1;
+}
+.section-title h2 span {
+  color: #0ABEF1;
+}
+.section-title p {
+  margin: 0;
+}
+/* ========== About Area Css =========*/
+
+.about-info {
+  background: #fcfcfc none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 4px 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 4px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.about-icon img {
+  width: 38px;
+}
+.about-text {
+  padding-left: 50px;
+}
+.about-text h3 {
+  font-size: 25px;
+  margin: 0;
+}
+.about-text p:last-child {
+    margin: 0;
+}
+.about-text a {
+    color: #000;
+}
+.boxed-btn.about-btn {
+  margin: 0;
+}
+
+/* ========== Why Area Css =========*/
+.why-area {
+  background: #0b0c10 none repeat scroll 0 0;
+  color: #fff;
+  padding: 50px 0;
+}
+.why-area p img {
+  margin-right: 15px;
+  width: 35px;
+}
+.why-area p .mr-15 {
+  display: inline-block;
+  height: 30px;
+  margin-right: 25px;
+  width: 35px;
+}
+.why-area p:last-child {
+  margin: 0;
+}
+.why-title h2 {
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+.why-title h2::before {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 60px;
+}
+.why-bg {
+  background-size: cover;
+  height: 175px;
+}
+.why-area h3 {
+  margin-bottom: 40px;
+}
+
+/* ========== Happy Client Area Css =========*/
+.happy-client-area {
+  background: #0b0c10 none repeat scroll 0 0;
+  color: #fff;
+  padding: 40px 0;
+}
+.single-counter-box img {
+  width: 35px;
+}
+.single-counter-box h2.count {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  margin-bottom: 10px;
+}
+.single-counter-box img {
+  width: 35px;
+  margin-top: -15px;
+}
+.single-counter-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* ========== Project Area Css =========*/
+.project-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.project-title li {
+  border: 1px solid #0b0c10;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 8px 15px;
+  transition: all 0.3s ease 0s;
+}
+.project-title li.active {
+  background: #0abef1 none repeat scroll 0 0;
+  color: #FFF;
+  border-color: #0abef1;
+}
+
+/* ========== Project List Css =========*/
+a.sinlgle-project-item {
+  background-color: #000;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  display: block;
+  height: 210px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.sinlgle-project-item::before {
+  background: rgba(10, 190, 210, 0.3) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 100%;
+}
+.sinlgle-project-item h3 {
+  background: #0abef1 none repeat scroll 0 0;
+  bottom: 0;
+  margin: 0;
+  font-size: 25px;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 100%;
+}
+.sinlgle-project-item:hover::before {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.sinlgle-project-item:hover h3 {
+  opacity: 1;
+  visibility: visible;
+}
+/* ========== project-item-hover Css =========*/
+.project-item-hover img {
+  height: 20px;
+  left: -30px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: all 0.7s ease 0s;
+  visibility: hidden;
+  width: 30px;
+}
+.sinlgle-project-item:hover .project-item-hover img {
+  opacity: 1;
+  left: 50%;
+  visibility: visible;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*======== Ses More btn CSS ========*/
+.boxed-btn.see-more {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+.boxed-btn.see-more:hover {
+    background: #000;
+    border-color: #000;
+    color: #FFF;
+}
+/*======== Testimonial Area CSS ========*/
+.testimonial-area {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  padding: 80px 0;
+}
+.single-testimonial-item img {
+  border: 3px solid #0abef1;
+  border-radius: 50%;
+  max-width: 60px;
+}
+.testimonial-info h3 {
+  margin-bottom: 20px;
+}
+.testimonial-info h3 span {
+  display: block;
+  font-size: 65%;
+  margin-top: 10px;
+}
+.testimonial-info .author-say {
+  position: relative;
+  z-index: 1;
+}
+.testimonial-info .author-say::before, .testimonial-info .author-say::after {
+  bottom: -5px;
+  content: "â€˜â€˜";
+  font-family: fontawesome;
+  font-size: 40px;
+  left: -20px;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+.testimonial-info .author-say::after {
+  content: "â€™â€™";
+  left: auto;
+  top: 10px;
+}
+.testimonial-info p:last-child {
+  margin: 0;
+}
+/*======== Owl-carousel CSS ========*/
+.testimonial-carousel .owl-dots {
+  bottom: -50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.testimonial-carousel .owl-dots div {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  height: 3px;
+  margin: 0 5px;
+  transition: all 0.3s ease 0s;
+  width: 22px;
+}
+.testimonial-carousel .owl-dots div.active {
+  background: #0abef1;
+  width: 30px;
+}
+/*======== Single-bar-item ========*/
+.skill-title.section-title, .single-bar-item {
+  margin: 0;
+}
+.single-bar-item {
+  margin-top: 30px;
+}
+.single-bar-item h2 {
+  margin: 0;
+}
+.single-bar-item h2 span {
+  display: block;
+  font-size: 25px;
+}
+/*======== CTA Area ========*/
+.cta-area {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.cta-area::before {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+/*======== Contact Area ========*/
+.section-title.contact-title h2 {
+  border-right: medium none;
+}
+/*======== Contact Form Css ========*/
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], input[type="password"], textarea {
+  
+}
+.contact-form input, .contact-form textarea {
+  border: 1px solid #0abef1;
+  font-family: "Rum Raisin";
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 100%;
+}
+.contact-form input[type="submit"], .contact-form button[type="submit"], .contact-form input[type="tel"] {
+  margin: 0;
+}
+.contact-form input[type="submit"], .contact-form button[type="submit"] {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 2px;
+  transition: all 0.3s ease 0s;
+}
+/*======== Site Footer Css ========*/
+.site-footer {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  font-family: "Mukta";
+  padding: 20px;
+}
+.site-footer a {
+  color: #0abef1;
+  padding-left: 4px;
+}
+.site-footer a:hover {
+  color: #299A0B;
+  text-decoration: underline;
+}
+
+
