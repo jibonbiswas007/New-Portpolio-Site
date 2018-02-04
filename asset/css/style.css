@@ -69,13 +69,15 @@ body {
     padding: 0.2em 0;
 }
 
-/* ========== Section Padding =========*/
+/* ========== Section Padding Css =========*/
 .section-padding {
     padding: 100px 0;
 }
 .section-padding-80 {
   padding: 80px 0;
 }
+/* ========== Background Css =========*/
+
 /* ========== hero-area-bg =========*/
 .hero-area-bg {background: url(../img/earth.gif), url(../img/hero-bg.jpg);}
 /* ========== why bg =========*/
@@ -89,13 +91,14 @@ body {
 .bg-5 {background: url(../img/creativemass.jpg);}
 .bg-6 {background: url(../img/fashion.jpg);}
 
-/* =========== Trigger Menu ==========*/
+/* =========== Trigger Menu Css ==========*/
 .trigger-menu {
   background: #0abef1 none repeat scroll 0 0;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   cursor: pointer;
   height: 42px;
   padding: 4px 8px;
@@ -110,7 +113,11 @@ body {
   display: block;
   height: 4px;
   margin: 6px 0;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
   width: 100%;
 }
 .trigger-menu.active {
@@ -138,7 +145,7 @@ body {
          -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
 }
-/* =========== Sidebar Menu ==========*/
+/* =========== Sidebar Menu Css ==========*/
 .sidebar-menu {
   background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
   -webkit-box-sizing: border-box;
@@ -178,7 +185,7 @@ body {
 .main-menu li a:hover, .social-links li a:hover {
     background: #0ABEF1;
 }
-/* ========== Social Links =========*/
+/* ========== Social Links Css =========*/
 .social-links {
   margin-top: 100px;
 }
@@ -186,7 +193,8 @@ body {
   display: inline-block;
 }
 .social-links li a {
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: block;
   height: 35px;
   line-height: 35px;
@@ -208,7 +216,10 @@ body {
     position: relative;
 }
 .hero-area-bg {
-  animation: 50s linear 0s normal none infinite running animate-background;
+  -webkit-animation: 50s linear 0s normal none infinite running animate-background;
+     -moz-animation: 50s linear 0s normal none infinite running animate-background;
+       -o-animation: 50s linear 0s normal none infinite running animate-background;
+          animation: 50s linear 0s normal none infinite running animate-background;
   background-attachment: fixed;
   background-color: #000;
   background-position: 120% 70px, 0px 0px, 0px 0px;
@@ -243,7 +254,8 @@ body {
 }
 .hero-area img {
   background: #ddd none repeat scroll 0 0;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   bottom: -35px;
   left: 50%;
   position: absolute;
@@ -417,7 +429,11 @@ body {
   display: inline-block;
   margin-right: 5px;
   padding: 8px 15px;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
 }
 .project-title li.active {
   background: #0abef1 none repeat scroll 0 0;
@@ -445,7 +461,11 @@ a.sinlgle-project-item {
   left: 0;
   opacity: 0;
   position: absolute;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+     -moz-transition: all 0.5s ease 0s;
+      -ms-transition: all 0.5s ease 0s;
+       -o-transition: all 0.5s ease 0s;
+          transition: all 0.5s ease 0s;
   visibility: hidden;
   width: 100%;
 }
@@ -458,7 +478,11 @@ a.sinlgle-project-item {
   padding: 5px;
   position: absolute;
   text-align: center;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+     -moz-transition: all 0.5s ease 0s;
+      -ms-transition: all 0.5s ease 0s;
+       -o-transition: all 0.5s ease 0s;
+          transition: all 0.5s ease 0s;
   visibility: hidden;
   width: 100%;
 }
@@ -483,7 +507,11 @@ a.sinlgle-project-item {
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
-  transition: all 0.7s ease 0s;
+  -webkit-transition: all 0.7s ease 0s;
+     -moz-transition: all 0.7s ease 0s;
+      -ms-transition: all 0.7s ease 0s;
+       -o-transition: all 0.7s ease 0s;
+          transition: all 0.7s ease 0s;
   visibility: hidden;
   width: 30px;
 }
@@ -499,7 +527,8 @@ a.sinlgle-project-item {
 }
 /*======== Ses More btn CSS ========*/
 .boxed-btn.see-more {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   margin: 0;
 }
 .boxed-btn.see-more:hover {
@@ -515,7 +544,8 @@ a.sinlgle-project-item {
 }
 .single-testimonial-item img {
   border: 3px solid #0abef1;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   max-width: 60px;
 }
 .testimonial-info h3 {
@@ -621,7 +651,11 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="url"], i
   font-size: 20px;
   font-weight: normal;
   padding: 2px;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
 }
 /*======== Site Footer Css ========*/
 .site-footer {
